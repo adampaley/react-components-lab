@@ -1,13 +1,11 @@
 // imports
 import './WeatherForecast.css'
+import WeatherData from '../WeatherData/WeatherData.jsx'
 
 const WeatherForecast = (props) => {
     return (
         <div className="weather">
-          <h2>{props.day}</h2>
-          <img src="" alt="" />
-          <p><span>conditions: </span>{props.conditions}</p>
-          <p><span>time: </span>{props.time}</p>
+          <WeatherData img={props.img} imgAlt={props.imgAlt} day={props.day} conditions={props.conditions} time={props.time} />
         </div>
     )
 }
