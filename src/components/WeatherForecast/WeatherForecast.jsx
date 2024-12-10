@@ -5,7 +5,7 @@ import WeatherData from '../WeatherData/WeatherData.jsx'
 const WeatherForecast = (props) => {
     return (
         <div className="weather">
-          <WeatherData img={props.img} imgAlt={props.imgAlt} day={props.day} conditions={props.conditions} time={props.time} />
+          <WeatherData img={props.weatherForecast.img} imgAlt={props.weatherForecastimgAlt} day={props.weatherForecast.day} conditions={props.weatherForecast.conditions} time={props.weatherForecast.time} />
         </div>
     )
 }
